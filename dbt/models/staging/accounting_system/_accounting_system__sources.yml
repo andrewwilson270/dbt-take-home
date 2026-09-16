@@ -1,0 +1,10 @@
+version: 2
+sources:
+
+  - name: accounting_system
+    database: confido_demo
+    schema: public
+    tables:
+      - name: invoices
+      - name: invoice_items
+      - name: items

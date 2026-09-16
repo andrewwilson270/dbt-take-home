@@ -1,0 +1,37 @@
+
+version: 2
+models:
+
+  - name: invoice_line_items
+    description: A list of invoices line items enriched with invoice data
+    columns:
+      - name: invoice_items_id
+        description: An identifier for the invoice items 
+      - name: invoice_id
+        description: A unique identifier for the invoice
+      - name: item_id
+        description: An identifier for an item
+      - name: customer_remote_id
+        description: A unique identifier for the customer in external system 
+      - name: subsidiary_id
+        description: Unique identifier of subsidiary of a company 
+      - name: company_detail_id
+        description: Unique identifier of company 
+      - name: check_remit_item_id
+        description: Item Check Remit ID
+      - name: external_system_id
+        description: Number of invoice
+      - name: currency_iso3_code
+        description: Currency Code of invoice (eg. USD)
+      - name: item_name
+        description: An identifier for the invoice items
+      - name: quantity
+        description: Number of items purchased
+      - name: unit_price
+        description: Cost of each item
+      - name: total_amount
+        description: Total spent (quantity*unit_price)
+      - name: invoice_paid_on_date
+        description: Date the invoice was paid Timezone EST
+      - name: invoice_created_datetime
+        description: Timestamp of invoice creation Timezone EST
